@@ -6,3 +6,44 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
+
+  <body>
+    <h1>Transport App Calculator</h1>
+    <div class="container">
+
+    <div class="container">
+      <div class="form_container">
+        <div class="createform">
+          <label for="items">From</label><br />
+          <input type="text" placeholder="Enter your Destination" id="items" class="textb" /><br />
+          <br />
+          <label for="items">To</label><br />
+          <input type="text" placeholder="Enter your Destination" id="PointB" class="textb" /><br />
+          <br />
+          <label for="Amount">Taxi Fare</label><br />
+          <input type="number" placeholder="Enter your Amount " id="amount" class="textb"/><br>
+          <br>
+          <button onclick="add(), tot() " class="addButton">Add Item </button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+     
+    <table class="table">
+        <thead>
+            
+                <th>Items</th>
+                <th>Amount</th>
+                <th>Remove</th>
+        </thead>
+        <tbody id="table_data"></tbody>
+
+    </table>
+
+    <div class = " total">
+    <h1 id = "display"> total  </h1></div>
+    
+    <script src="/js/main.js"></script>
+  </body>
+</html>
